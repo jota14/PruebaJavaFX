@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlFX">
+   <children>
+      <SplitPane dividerPositions="0.6283716283716284" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxWidth="900.0" minWidth="627.0" prefHeight="600.0" prefWidth="627.0">
+               <children>
+                  <ImageView fitHeight="408.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/images/freesolo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane maxWidth="1000.0" opacity="0.54" prefHeight="600.0" prefWidth="627.0" style="-fx-background-color: #5D4037;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="105.0" layoutY="357.0" prefHeight="120.0" prefWidth="201.0" styleClass="labelCreate" stylesheets="@../control/application.css" text="Create Your Own Account" wrapText="true" />
+                        <JFXButton layoutX="105.0" layoutY="501.0" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" />
+                        <JFXButton layoutX="231.0" layoutY="501.0" prefHeight="36.0" prefWidth="93.0" style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="SIGNIN" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxWidth="500.0" minWidth="377.0" prefHeight="600.0" prefWidth="377.0">
+               <children>
+                  <Pane maxWidth="400.0" minWidth="377.0" opacity="0.65" prefHeight="600.0" prefWidth="377.0" style="-fx-background-color: #EDE9D1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="120.0" layoutY="36.0" prefHeight="120.0" prefWidth="137.0" styleClass="labelM" stylesheets="@../control/application.css" text="M" />
+                        <VBox layoutX="64.0" layoutY="162.0" prefHeight="290.0" prefWidth="258.0" spacing="20.0">
+                           <children>
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" prefHeight="25.0" prefWidth="260.0" promptText="FIRST NAME" unFocusColor="#757575">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" prefHeight="25.0" prefWidth="260.0" promptText="LAST NAME">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" prefHeight="25.0" prefWidth="260.0" promptText="E-MAIL" />
+                              <JFXPasswordField focusColor="#ff4081" labelFloat="true" promptText="PASSWORD" />
+                              <JFXPasswordField focusColor="#ff4081" labelFloat="true" promptText="REPEAT PASSWORD" />
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                        <JFXToggleButton layoutX="31.0" layoutY="495.0" text="UNDER 18 ?" textFill="#212121" toggleColor="#ff4081">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXToggleButton>
+                        <JFXButton fx:id="btnOpenFree" layoutX="211.0" layoutY="507.0" onAction="#openStage" prefHeight="36.0" prefWidth="93.0" style="-fx-border-color: #795548; -fx-border-radius: 10px;" text="GET STARTED" textFill="#795548">
+                           <tooltip>
+                              <Tooltip text="Open FreeSolo" />
+                           </tooltip>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

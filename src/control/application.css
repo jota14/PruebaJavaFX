@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.fondoPane{
+	-fx-background-color: #5D4037;
+}
+
+.labelM{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 220px;
+	-fx-font-size: 30px;
+	-fx-text-fill: #ff4081
+}
+
+.labelCreate{
+	-fx-text-fill: #ffffff;
+	-fx-font-size: 30px;
+	-fx-font-family: "PoiretOne-Regular"
+	}
+	
+.btnPanel{
+	-fx-border-color: #fff;
+	-fx-text-fill: #fff;
+	}
+
+.imgTam{
+	-fx-background-size: 100px;	 
+}
